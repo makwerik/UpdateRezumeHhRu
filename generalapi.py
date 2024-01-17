@@ -80,7 +80,6 @@ class HhRuUpdate:
 
         if response.status_code == 204:
             print('Резюме поднято')
-            print(response.json())
             time.sleep(14460)
 
         elif response.status_code == 403:
