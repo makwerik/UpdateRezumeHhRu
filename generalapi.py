@@ -85,6 +85,7 @@ class HhRuUpdate:
         elif response.status_code == 403:
             print("Токен просрочен")
             self.refresh_token()
+            self.headers = self.load_headers()
 
         elif response.status_code == 429:
             print('Объявление уже поднято')

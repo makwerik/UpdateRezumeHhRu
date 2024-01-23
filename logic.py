@@ -1,7 +1,5 @@
 from generalapi import HhRuUpdate
 
-
-
+hh = HhRuUpdate()
 while True:
-    hh = HhRuUpdate()
     hh.update_resume()
